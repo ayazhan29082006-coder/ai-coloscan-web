@@ -40,7 +40,7 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
-st.title("🔍 AI-ColoScan: Diagnostic System")
+st.title("AI-ColoScan: Diagnostic System")
 st.divider()
 
 uploaded_file = st.file_uploader("Upload Video", type=['mp4', 'mov', 'avi'], label_visibility="collapsed")
@@ -101,7 +101,7 @@ if uploaded_file is not None:
 
     # --- КАРУСЕЛЬ (ТОП-5 КРОПОВ) ---
     st.divider()
-    st.subheader("🏆 Top 5 Distinct Detections (Crops)")
+    st.subheader("Top 5 Distinct Detections (Crops)")
     if st.session_state.top_crops:
         cols = st.columns(5)
         for i, (score, crop_img) in enumerate(st.session_state.top_crops):
